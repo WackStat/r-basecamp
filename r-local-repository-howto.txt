@@ -1,0 +1,7 @@
+
+1 - Go to Q:\Operations_PAM\Information_Technology_PAM_GVA\Products\R\LocalCRAN\R\bin\windows\contrib\3.2
+2 - Place the packages you need into the directory (say, 3.2)
+3 - Change into that directory and run the following command to generate PACKAGES and PACKAGES.gz files for the repository
+		> tools::write_PACKAGES(".", type="win.binary")
+4 - Now you can access the repository by pointing to the address given a command such as
+    > update.packages(repos="http://my.local.server/R", ask=FALSE)
